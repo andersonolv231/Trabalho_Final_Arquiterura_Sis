@@ -1,0 +1,4 @@
+dependencies {
+    api project(':dominio')
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+}

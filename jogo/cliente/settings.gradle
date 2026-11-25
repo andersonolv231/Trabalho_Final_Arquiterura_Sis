@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'missao-marte-cliente'
+
+include 'dominio', 'core', 'lwjgl3'
+
+def propriedadesLocais = new File(rootDir, 'local.properties')
+def temAndroidSdk = System.getenv('ANDROID_HOME') != null
+        || System.getenv('ANDROID_SDK_ROOT') != null
+        || (propriedadesLocais.exists() && propriedadesLocais.text.contains('sdk.dir'))
+
+if (temAndroidSdk) {
+    include 'android'
+} else {
+    println 'Android SDK não encontrado: módulo android ignorado (desktop continua funcionando).'
+}
