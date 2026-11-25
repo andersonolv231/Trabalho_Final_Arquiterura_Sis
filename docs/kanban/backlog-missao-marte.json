@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0",
+  "repository": {
+    "owner": "andersonolv231",
+    "name": "Trabalho_Final_Arquiterura_Sis"
+  },
+  "schedule": {
+    "starts_on": "2026-11-03",
+    "ends_on": "2026-12-03",
+    "timezone": "America/Fortaleza",
+    "note": "A equipe iniciou o projeto integrador em 25/11, durante a Sprint 4 do calendario; por isso o quadro registra apenas as Sprints 4 e 5, com o trabalho real a partir dessa data. A Sprint 5 termina de fato em 03/12.",
+    "sprints": [
+      {
+        "id": "sprint-04",
+        "title": "Sprint 4 - Base, jogo grafico, servidor e Android",
+        "starts_on": "2026-11-23",
+        "ends_on": "2026-11-29",
+        "phases": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "sprint-05",
+        "title": "Sprint 5 - Estabilizacao, apresentacao e fechamento",
+        "starts_on": "2026-11-30",
+        "ends_on": "2026-12-03",
+        "phases": []
+      }
+    ]
+  },
+  "github_project": {
+    "title": "Missao Marte - Grupo 01",
+    "view": "board",
+    "status_field": "Status",
+    "status_values": [
+      "Backlog",
+      "Em andamento",
+      "Em revisao",
+      "Concluido"
+    ],
+    "sprint_field": {
+      "name": "Sprint",
+      "duration_days": 7,
+      "start_date": "2026-11-23",
+      "iterations": [
+        {
+          "id": "sprint-04",
+          "title": "Sprint 4 - Base, jogo grafico, servidor e Android",
+          "start_date": "2026-11-23",
+          "duration_days": 7,
+          "ends_on": "2026-11-29"
+        },
+        {
+          "id": "sprint-05",
+          "title": "Sprint 5 - Estabilizacao, apresentacao e fechamento",
+          "start_date": "2026-11-30",
+          "duration_days": 7,
+          "ends_on": "2026-12-03"
+        }
+      ]
+    }
+  },
+  "labels_to_create": [
+    {
+      "name": "tipo:analise",
+      "color": "D4C5F9",
+      "description": "Analise e planejamento"
+    },
+    {
+      "name": "tipo:desenvolvimento",
+      "color": "FBCA04",
+      "description": "Implementacao"
+    },
+    {
+      "name": "tipo:teste",
+      "color": "BFD4F2",
+      "description": "Testes e validacao"
+    },
+    {
+      "name": "tipo:documentacao",
+      "color": "C2E0C6",
+      "description": "Documentacao e evidencias"
+    }
+  ],
+  "milestones_to_create": [
+    {
+      "phase": 1,
+      "title": "Fase 1 - Refatoracao arquitetural",
+      "description": "Analise e refatoracao SOLID do jogo de console.",
+      "due_on": "2026-11-29T23:59:59Z"
+    },
+    {
+      "phase": 2,
+      "title": "Fase 2 - Gradle",
+      "description": "Gradle Wrapper, build reproduzivel e JUnit 5.",
+      "due_on": "2026-11-29T23:59:59Z"
+    },
+    {
+      "phase": 3,
+      "title": "Fase 3 - Estrutura LibGDX",
+      "description": "Modulos dominio, core e lwjgl3 e ciclo de vida libGDX.",
+      "due_on": "2026-11-29T23:59:59Z"
+    },
+    {
+      "phase": 4,
+      "title": "Fase 4 - Interface grafica",
+      "description": "Interface grafica desktop jogavel com sprites, audio e HUD.",
+      "due_on": "2026-11-29T23:59:59Z"
+    },
+    {
+      "phase": 5,
+      "title": "Fase 5 - Servidor e ranking",
+      "description": "API REST, persistencia, autenticacao, historico e ranking global.",
+      "due_on": "2026-11-29T23:59:59Z"
+    },
+    {
+      "phase": 6,
+      "title": "Fase 6 - Android",
+      "description": "Modulo Android, controles por toque e servidor configuravel.",
+      "due_on": "2026-11-29T23:59:59Z"
+    },
+    {
+      "phase": 7,
+      "title": "Fase 7 - Evolucao livre",
+      "description": "Melhoria escolhida pela equipe, testada e documentada.",
+      "due_on": "2026-12-03T23:59:59Z"
+    }
+  ],
+  "issues": [
+    {
+      "local_id": "MM-01",
+      "sprint": "sprint-04",
+      "phase": 1,
+      "depends_on": [],
+      "payload": {
+        "title": "[Base] Montar repositorio, estrutura de fases e guia da equipe",
+        "body": "## Objetivo\nCriar o repositorio com as fases 0 a 2, os esqueletos do cliente e do servidor e a documentacao que orienta a equipe.\n\n## Responsavel sugerido\nAnderson\n\n## Criterios de aceite\n- [ ] Fases 0, 1 e 2 em pastas separadas e preservadas\n- [ ] README, GUIA-DA-EQUIPE, ARQUITETURA, API e CLAUDE.md publicados\n- [ ] Integrantes adicionados ao repositorio com permissao de escrita",
+        "labels": [
+          "tipo:documentacao"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-02",
+      "sprint": "sprint-04",
+      "phase": 1,
+      "depends_on": [],
+      "payload": {
+        "title": "[Fase 1] Registrar a refatoracao SOLID como ponto de partida",
+        "body": "## Objetivo\nDocumentar a analise inicial, a refatoracao e as evidencias da versao SOLID usada como Fase 1.\n\n## Responsavel sugerido\nIgor\n\n## Criterios de aceite\n- [ ] fase-01-refatoracao compila com javac e os 39 testes passam\n- [ ] Analise inicial, revisao SOLID e UML presentes em docs/\n- [ ] Comportamento preservado e correcoes intencionais listados",
+        "labels": [
+          "tipo:analise",
+          "tipo:documentacao"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-03",
+      "sprint": "sprint-04",
+      "phase": 2,
+      "depends_on": [
+        "MM-01"
+      ],
+      "payload": {
+        "title": "[Fase 2] Validar Gradle Wrapper e JUnit 5 em maquina limpa",
+        "body": "## Objetivo\nConfirmar que a versao console roda e testa pelo Gradle Wrapper no Windows.\n\n## Responsavel sugerido\nAnderson\n\n## Criterios de aceite\n- [ ] gradlew test passa (41 testes) no Windows\n- [ ] gradlew run joga uma partida completa no console\n- [ ] Saida dos testes salva como evidencia em docs/\n\n## Depende de\nMM-01",
+        "labels": [
+          "tipo:teste"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-04",
+      "sprint": "sprint-04",
+      "phase": 3,
+      "depends_on": [
+        "MM-03"
+      ],
+      "payload": {
+        "title": "[Fase 3] Validar cliente libGDX desktop e explicar o ciclo de vida",
+        "body": "## Objetivo\nRodar o cliente grafico ja montado e documentar o ciclo de vida (create, render, resize, pause, resume, dispose) e o papel dos modulos.\n\n## Responsavel sugerido\nIgor\n\n## Criterios de aceite\n- [ ] gradlew :lwjgl3:run abre a janela e permite jogar uma partida\n- [ ] gradlew test do cliente passa sem abrir janela\n- [ ] Tutorial curto da fase no README do cliente\n\n## Depende de\nMM-03",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:documentacao"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-05",
+      "sprint": "sprint-04",
+      "phase": 4,
+      "depends_on": [
+        "MM-04"
+      ],
+      "payload": {
+        "title": "[Fase 4] Substituir formas por sprites e liberar recursos corretamente",
+        "body": "## Objetivo\nDesenhar nave, passageiros, asteroides, inimigos e plataforma com texturas, carregadas com AssetManager.\n\n## Responsavel sugerido\nIgor\n\n## Criterios de aceite\n- [ ] Texturas em jogo/cliente/assets com origem/licenca registrada\n- [ ] Todos os recursos liberados em dispose()\n- [ ] Nenhuma regra de jogo dentro das telas\n\n## Depende de\nMM-04",
+        "labels": [
+          "tipo:desenvolvimento"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-06",
+      "sprint": "sprint-04",
+      "phase": 4,
+      "depends_on": [
+        "MM-04"
+      ],
+      "payload": {
+        "title": "[Fase 4] Adicionar audio de embarque, colisao, vitoria e derrota",
+        "body": "## Objetivo\nTocar efeitos sonoros a partir dos EventoTurno, com opcao para desativar o audio.\n\n## Responsavel sugerido\nIgor\n\n## Criterios de aceite\n- [ ] Sons tocam nos eventos corretos\n- [ ] -Dmissaomarte.semaudio=true desativa o audio\n- [ ] Sons liberados em dispose()\n\n## Depende de\nMM-04",
+        "labels": [
+          "tipo:desenvolvimento"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-07",
+      "sprint": "sprint-04",
+      "phase": 4,
+      "depends_on": [
+        "MM-04"
+      ],
+      "payload": {
+        "title": "[Fase 4] Telas de nome do piloto e ranking local e fonte com acentos",
+        "body": "## Objetivo\nCompletar a interface: digitar o nome do piloto, escolher o tamanho do mapa, ver o ranking local e exibir acentos (gdx-freetype ou fonte .fnt).\n\n## Responsavel sugerido\nIgor\n\n## Criterios de aceite\n- [ ] Nome do piloto aparece no HUD e no ranking\n- [ ] Tela de ranking acessivel pelo menu\n- [ ] Textos com acentos exibidos corretamente\n\n## Depende de\nMM-04",
+        "labels": [
+          "tipo:desenvolvimento"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-08",
+      "sprint": "sprint-04",
+      "phase": 5,
+      "depends_on": [],
+      "payload": {
+        "title": "[Fase 5] Login com token e protecao das rotas autenticadas",
+        "body": "## Objetivo\nImplementar POST /api/autenticacao/login e validar o token Bearer nas rotas de partidas, conforme docs/API.md.\n\n## Responsavel sugerido\nAsafe\n\n## Criterios de aceite\n- [ ] Login correto devolve token e expiracao; login errado devolve 401\n- [ ] Rotas /api/partidas/** exigem token valido\n- [ ] Testes MockMvc cobrindo sucesso, senha errada e token ausente ou expirado\n- [ ] Token e senha nunca aparecem em log",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:teste"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-09",
+      "sprint": "sprint-04",
+      "phase": 5,
+      "depends_on": [
+        "MM-08"
+      ],
+      "payload": {
+        "title": "[Fase 5] Registrar partidas e historico do jogador",
+        "body": "## Objetivo\nImplementar POST /api/partidas e GET /api/partidas/minhas com DTOs e validacao.\n\n## Responsavel sugerido\nAsafe\n\n## Criterios de aceite\n- [ ] Entidade Partida ligada ao Jogador via JPA\n- [ ] Dados invalidos devolvem 400 no formato ErroResposta\n- [ ] Historico ordenado da mais recente para a mais antiga\n- [ ] Testes do servidor passando\n\n## Depende de\nMM-08",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:teste"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-10",
+      "sprint": "sprint-04",
+      "phase": 5,
+      "depends_on": [
+        "MM-09"
+      ],
+      "payload": {
+        "title": "[Fase 5] Ranking global e documentacao da API",
+        "body": "## Objetivo\nImplementar GET /api/ranking e completar docs/API.md, incluindo a limitacao de validacao da pontuacao.\n\n## Responsavel sugerido\nAsafe\n\n## Criterios de aceite\n- [ ] Ranking considera so vitorias, com limite configuravel\n- [ ] docs/API.md atualizado com exemplos reais\n- [ ] Limitacao da pontuacao enviada pelo cliente documentada\n\n## Depende de\nMM-09",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:documentacao"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-11",
+      "sprint": "sprint-04",
+      "phase": 5,
+      "depends_on": [
+        "MM-08"
+      ],
+      "payload": {
+        "title": "[Fase 5] ClienteRankingHttp com Gdx.net e telas de cadastro e login",
+        "body": "## Objetivo\nImplementar ClienteRanking com chamadas assincronas, sem bloquear a interface, e preservar o modo convidado.\n\n## Responsavel sugerido\nAnderson\n\n## Criterios de aceite\n- [ ] Cadastro, login, envio de partida e ranking global funcionando contra o servidor\n- [ ] Servidor desligado: mensagem amigavel e o jogo continua como convidado\n- [ ] Respostas aplicadas na tela via Gdx.app.postRunnable\n- [ ] Teste do cliente com servidor falso ou parser de JSON testado\n\n## Depende de\nMM-08",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:teste"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-12",
+      "sprint": "sprint-04",
+      "phase": 6,
+      "depends_on": [
+        "MM-04"
+      ],
+      "payload": {
+        "title": "[Fase 6] Validar modulo Android e gerar APK de debug",
+        "body": "## Objetivo\nGerar o APK com o Android SDK, reutilizando core e dominio, e preservar o build desktop.\n\n## Responsavel sugerido\nAnderson\n\n## Criterios de aceite\n- [ ] gradlew :android:assembleDebug gera o APK (ou a limitacao de ambiente fica documentada com evidencias)\n- [ ] gradlew :lwjgl3:run continua funcionando\n- [ ] Ranking local funcionando no Android (RankingRepository compativel)\n\n## Depende de\nMM-04",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:teste"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-13",
+      "sprint": "sprint-04",
+      "phase": 6,
+      "depends_on": [
+        "MM-12"
+      ],
+      "payload": {
+        "title": "[Fase 6] Controles por toque e endereco do servidor configuravel",
+        "body": "## Objetivo\nAdicionar botoes na tela (setas, embarcar, abortar) e uma tela para informar o endereco do servidor, sem segredos no app.\n\n## Responsavel sugerido\nAnderson\n\n## Criterios de aceite\n- [ ] Partida jogavel so com toque\n- [ ] Layout adaptado a telas de celular\n- [ ] Endereco do servidor configuravel no jogo\n\n## Depende de\nMM-12",
+        "labels": [
+          "tipo:desenvolvimento"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-14",
+      "sprint": "sprint-04",
+      "phase": 6,
+      "depends_on": [
+        "MM-10"
+      ],
+      "payload": {
+        "title": "[Fase 6] Preparar o servidor para publicacao",
+        "body": "## Objetivo\nDocumentar em jogo/servidor/DEPLOY.md a configuracao necessaria para publicar o servidor.\n\n## Responsavel sugerido\nAsafe\n\n## Criterios de aceite\n- [ ] Variaveis de ambiente, porta, health check e persistencia dos dados descritas\n- [ ] Instrucoes para aceitar conexoes do celular (SERVER_ADDRESS=0.0.0.0)\n- [ ] Nenhum segredo versionado\n\n## Depende de\nMM-10",
+        "labels": [
+          "tipo:documentacao"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-15",
+      "sprint": "sprint-04",
+      "phase": 7,
+      "depends_on": [
+        "MM-05"
+      ],
+      "payload": {
+        "title": "[Fase 7] Melhoria livre do jogo",
+        "body": "## Objetivo\nEscolher e implementar uma melhoria compativel com o prazo (ex.: novo passageiro, inimigo perseguidor, nova arma), usando os pontos de extensao existentes.\n\n## Responsavel sugerido\nIgor (com a equipe)\n\n## Criterios de aceite\n- [ ] Melhoria escolhida e registrada nesta issue\n- [ ] Implementada no dominio com testes\n- [ ] Comportamento anterior preservado ou mudancas intencionais documentadas\n\n## Depende de\nMM-05",
+        "labels": [
+          "tipo:desenvolvimento",
+          "tipo:teste"
+        ]
+      }
+    },
+    {
+      "local_id": "MM-16",
+      "sprint": "sprint-05",
+      "phase": 7,
+      "depends_on": [],
+      "payload": {
+        "title": "[Sprint 5] Relatorio tecnico, README final, retrospectiva e ensaio da apresentacao",
+        "body": "## Objetivo\nCongelar funcionalidades, revisar testes e comandos e preparar a entrega no AVA.\n\n## Responsavel sugerido\nTodos\n\n## Criterios de aceite\n- [ ] Comandos do README conferidos em outra maquina\n- [ ] Relatorio tecnico (2 a 4 paginas) entregue\n- [ ] Retrospectiva registrada em docs/RETROSPECTIVA.md\n- [ ] Kanban fechado e apresentacao ensaiada (10 a 15 min)",
+        "labels": [
+          "tipo:documentacao",
+          "tipo:teste"
+        ]
+      }
+    }
+  ]
+}
