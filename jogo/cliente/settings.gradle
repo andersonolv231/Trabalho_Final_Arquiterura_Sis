@@ -18,5 +18,5 @@ def temAndroidSdk = System.getenv('ANDROID_HOME') != null
 if (temAndroidSdk) {
     include 'android'
 } else {
-    println 'Android SDK não encontrado: módulo android ignorado (desktop continua funcionando).'
+    println 'Android SDK nao encontrado: modulo android ignorado (o desktop continua funcionando).'
 }
